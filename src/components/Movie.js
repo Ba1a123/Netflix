@@ -1,9 +1,12 @@
 import React from "react";
 
-function Movie() {
-  const id = usecontext();
-  // backend call
-  return <h1>movie id is {id}</h1>;
+function Movie(props) {
+  return (
+    <>
+    console.log("in movie path");
+    <h1>movie id is {props.id}</h1>
+    </>
+    );
 }
 
 export default Movie;
